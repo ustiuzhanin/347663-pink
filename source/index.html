@@ -1,12 +1,126 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
+  <header class="page-header">
 
-  </body>
+    <div class="page-header__wrapper">
+      <img class="page-header__logo" src="" alt="">
+      <button class="page-header__btn" type="button"><p class="visually-hidden">Меню</p></button>
+    </div>
+
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="catcher">
+    <button class="catcher__btn" type="button">Скачать приложение</button>
+    <div class="catcher__wrapper">
+      <img class="catcher__apple" src="" alt="">
+      <img class="catcher__androind" src="" alt="">
+      <img class="catcher__windows" src="" alt="">
+      <p class="catcher__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </section>
+
+  <section class="advantages">
+    <h3 class="advantages__caption">Устали от серости мегаполиса?</h3>
+    <h3 class="advantages__caption">Нам есть, что вам предложить!</h3>
+    <ul class="advantages__list ">
+      <li class="advantages__item">
+        <h3 class="advantages__title">Поднимает настроение</h3>
+        <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      </li>
+      <li class="advantages__item">
+        <h3 class="advantages__title">Меняет мир вокруг нас</h3>
+        <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+      </li>
+      <li class="advantages__item">
+        <h3 class="advantages__title">Заводит новых друзей</h3>
+        <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+      </li>
+    </ul>
+    <ul class="advantages__slider feedback">
+      <li class="feedback__slide">
+        <h3 class="feedback__title">Николай Петров</h3>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+      <li class="feedback__slide">
+        <h3 class="feedback__title">Николай Петров</h3>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+      <li class="feedback__slide">
+        <h3 class="feedback__title">Николай Петров</h3>
+        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      </li>
+    </ul>
+    <div class="advantages__pagination pagination">
+      <button class="pagination__bullet" type="button"></button>
+      <button class="pagination__bullet" type="button"></button>
+      <button class="pagination__bullet" type="button"></button>
+    </div>
+  </section>
+
+  <section class="price">
+    <h2 class="visually-hidden">Наши расценки:</h2>
+    <ul class="price__slider">
+      <li class="price__slide">
+        <table class="price__table options-table">
+          <tr class="options-table__row">
+            <th class="options-table__header">
+              Стандарт
+              <span class="options-table__price">3,99 USD</span>
+            </th>
+          </tr>
+          <tr class="options-table__row">
+            <td class="options-table__data">Jill</td>
+          </tr>
+          <tr class="options-table__row">
+            <td class="options-table__data">Eve</td>
+          </tr>
+          <tr class="options-table__row">
+            <td class="options-table__data">Eve</td>
+          </tr>
+        </table>
+      </li>
+    </ul>
+    <div class="price__pagination pagination">
+      <button class="pagination__bullet" type="button"></button>
+      <button class="pagination__bullet" type="button"></button>
+      <button class="pagination__bullet" type="button"></button>
+    </div>
+  </section>
+
+  <section class="contacts">
+    <h2 class="contacts__capture">Остались вопросы? Свяжитесь с нами!</h2>
+    <p class="contacts__info">Звоните</p>
+    <a class="contacts__link" href="tel:7-812-555-6666">+7(812)555-66-66</a>
+    <p class="contacts__info">Пишите</p>
+    <a class="contacts__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+    <p class="contacts__info">Приезжайте в гости</p>
+    <a class="contacts__link" href="#">ул. Большая Конюшенная, 19/8</a>
+    <div class="contacts__map map">
+      <img class="map__img" src="#" alt="">
+    </div>
+  </section>
+</body>
 </html>

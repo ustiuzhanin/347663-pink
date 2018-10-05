@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+
+  <header class="page-header">
+
+    <div class="page-header__wrapper">
+      <img class="page-header__logo" src="" alt="">
+      <button class="page-header__btn" type="button"><p class="visually-hidden">Меню</p></button>
+    </div>
+
+    <nav class="page-header__nav main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Фотографии</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Конкурс</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#" class="main-nav__link">Html Academy</a>
+        </li>
+      </ul>
+    </nav>
+
+    <h2 class="page-header__capture">Фотографии пользователей</h2>
+
+  </header>
+
+  <section class="pictures">
+    <h3 class="pictures__capture">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
+    <ul class="pictures__list comment">
+      <li class="comment__item">
+        <img class="comment__img comment__img--panorama" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Анна</h4>
+          <span class="comment__time">(5 Минут назад)</span>
+          <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 215</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Левон</h4>
+          <span class="comment__time">(5 Часов назад)</span>
+          <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 356</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Антон</h4>
+          <span class="comment__time">(12 Часов назад)</span>
+          <p class="comment__text">Соседи будут рады!</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 666</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Борис</h4>
+          <span class="comment__time">(20 Часов назад)</span>
+          <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 215</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Сергей</h4>
+          <span class="comment__time">(25 Часов назад)</span>
+          <p class="comment__text">Самая кубанская в мире!</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 4</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Максим</h4>
+          <span class="comment__time">(40 Часов назад)</span>
+          <p class="comment__text">Где снег-то?</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 150</span>
+          </div>
+        </div>
+      </li>
+      <li class="comment__item">
+        <img class="comment__img" src="#" alt="">
+        <div class="comment__wrapper">
+          <h4 class="comment__author">Надежда</h4>
+          <span class="comment__time">(45 Часов назад)</span>
+          <p class="comment__text">Всем GM и взаимные лайки!</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 2560</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="pictures__capture">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+
+  </section>
+
+  <section class="upload">
+    <form class="upload__form image-form">
+      <label for="image-form__label">
+        <img class="image-form__img" src="https://via.placeholder.com/350x150" alt="" class="upload__img">
+      </label>
+      <input class="visually-hidden" id="upload" type="file" name="myFile">
+      <label class="image-form__label" for="crop">
+        <img src="" alt="">
+      </label>
+      <input class="image-form__input" id="crop" type="range" name="crop" min="0" max="100">
+
+      <label class="image-form__label" for="fill">
+        <img src="" alt="">
+      </label>
+      <input class="image-form__input" id="fill" type="range" name="fill" min="0" max="100">
+
+      <label class="image-form__label" for="contrast">
+        <img src="" alt="">
+      </label>
+      <input class="image-form__input" id="contrast" type="range" name="contrast" min="0" max="100">
+
+      <button class="image-form__btn image-form__btn--submit">Запостить</button>
+      <input class="image-form__btn image-form__btn--reset" type="reset" value="Отмена">
+
+    </form>
+  </section>
+
+  <footer class="page-footer">
+    <img class="page-footer__logo" src="" alt="pink">
+    <ul class="page-footer__social social">
+      <li class="social__list">
+        <a href="#" class="social__link--twitter">
+          <p class="visually-hidden">Наш twitter</p>
+        </a>
+      </li>
+      <li class="social__list">
+        <a href="#" class="social__link--facebook">
+          <p class="visually-hidden">Наш Facebook</p>
+        </a>
+      </li>
+      <li class="social__list">
+        <a href="#" class="social__link--youtube">
+          <p class="visually-hidden">Наш Youtube</p>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__dev dev">
+      <p class="dev__text">Разработано</p>
+      <img class="dev__img" src="#" alt="Html Academy">
+    </div>
+  </footer>
+
+</body>
+</html>
