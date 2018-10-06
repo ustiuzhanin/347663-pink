@@ -1,0 +1,21 @@
+.comment {
+  @extend %list-reset;
+
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: lighter;
+  color: $secondary-color;
+}
+
+.comment__author {
+  font-weight: bold;
+}
+
+.comment__time {
+  text-transform: uppercase;
+}
+
+.comment__likes-count {
+  text-transform: uppercase;
+  color: $primary-color;
+}

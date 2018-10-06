@@ -1,0 +1,29 @@
+.btn {
+  padding: 17px;
+
+  font-family: $ff-primary;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: $white-color;
+
+  background-color: transparent;
+  border: 3px solid $white-color;
+  border-radius: 30px;
+}
+
+.btn--submit {
+  color: $primary-color;
+  border-color: $primary-color;
+}
+
+.btn--reset {
+  color: transparentize($secondary-color, .9);
+  border-color: transparentize($secondary-color, .9);
+}
+
+.btn--submit-img {
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 4px;
+}

@@ -1,0 +1,21 @@
+@import "node_modules/normalize-scss/sass/normalize/import-now";
+
+@import "source/sass/global/fonts";
+@import "source/sass/global/variables";
+@import "source/sass/global/general";
+@import "source/sass/global/mixins";
+
+@import "source/sass/blocks/btn";
+@import "source/sass/blocks/page-header";
+@import "source/sass/blocks/main-nav";
+@import "source/sass/blocks/catcher";
+@import "source/sass/blocks/advantages";
+@import "source/sass/blocks/feedback";
+@import "source/sass/blocks/price";
+@import "source/sass/blocks/options-table";
+@import "source/sass/blocks/contacts";
+@import "source/sass/blocks/pictures";
+@import "source/sass/blocks/comment";
+@import "source/sass/blocks/dev";
+@import "source/sass/blocks/form-page";
+@import "source/sass/blocks/form";

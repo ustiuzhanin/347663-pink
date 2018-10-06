@@ -1,0 +1,7 @@
+.price {
+  background-color: $gray-color;
+}
+
+.price__slider {
+  @extend %list-reset;
+}

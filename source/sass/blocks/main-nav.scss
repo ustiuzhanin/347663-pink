@@ -1,0 +1,17 @@
+.main-nav__list {
+  @extend %list-reset;
+}
+
+.main-nav__item {
+  background-color: $secondary-color;
+}
+
+.main-nav__link {
+  font-family: $ff-primary;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: $white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+}
