@@ -5,7 +5,7 @@
 }
 
 .form__list {
-  @extend %list-reset;
+  @include list-reset();
 }
 
 .form__label--text,

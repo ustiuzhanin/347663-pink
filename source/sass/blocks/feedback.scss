@@ -1,6 +1,7 @@
 .feedback {
-  @extend %list-reset;
+  @include list-reset();
 }
+
 .feendback__title {
   font-size: 18px;
   line-height: 30px;

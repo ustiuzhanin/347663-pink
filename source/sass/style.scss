@@ -1,10 +1,10 @@
 @import "node_modules/normalize-scss/sass/normalize/import-now";
-
+/* global */
 @import "source/sass/global/fonts";
 @import "source/sass/global/variables";
 @import "source/sass/global/general";
 @import "source/sass/global/mixins";
-
+/* blocks */
 @import "source/sass/blocks/btn";
 @import "source/sass/blocks/page-header";
 @import "source/sass/blocks/main-nav";

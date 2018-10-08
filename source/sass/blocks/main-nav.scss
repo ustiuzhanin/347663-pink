@@ -1,5 +1,5 @@
 .main-nav__list {
-  @extend %list-reset;
+  @include list-reset();
 }
 
 .main-nav__item {

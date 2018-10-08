@@ -3,5 +3,5 @@
 }
 
 .price__slider {
-  @extend %list-reset;
+  @include list-reset();
 }
