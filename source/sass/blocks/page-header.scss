@@ -1,0 +1,9 @@
+.page-header {
+  background-color: transparentize($secondary-color, 0.7);
+}
+
+.page-header__capture {
+  font-size: 24px;
+  color: $white-color;
+  font-weight: lighter;
+}

@@ -1,0 +1,38 @@
+.form {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+.form__list {
+  @include list-reset();
+}
+
+.form__label--text,
+.form__title {
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.form__label--check {
+  font-size: 18px;
+  color: $secondary-color;
+}
+
+.form__input,
+.form__textarea {
+  font-family: $ff-primary;
+  font-size: 18px;
+  line-height: 30px;
+  color: $secondary-color;
+  font-weight: normal;
+}
+
+.form__explanation-text {
+  color: $secondary-color;
+  text-transform: uppercase;
+}
+
+.form__explanation-text--sign {
+  color: $primary-color;
+}

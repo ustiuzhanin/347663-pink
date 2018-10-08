@@ -1,0 +1,16 @@
+.feedback {
+  @include list-reset();
+}
+
+.feendback__title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $black-color;
+}
+
+.feedback__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $secondary-color;
+}
