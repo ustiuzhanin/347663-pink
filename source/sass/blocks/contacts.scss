@@ -1,7 +1,18 @@
+.contacts {
+  text-align: center;
+}
+
 .contacts__capture {
+  width: 300px;
+  margin: 0 auto;
+
   font-size: 24px;
   font-weight: lighter;
   color: $secondary-color;
+}
+
+.contacts__list {
+  @include list-reset;
 }
 
 .contacts__info {
@@ -15,4 +26,16 @@
   font-weight: lighter;
   color: $primary-color;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    width: 400px;
+  }
 }

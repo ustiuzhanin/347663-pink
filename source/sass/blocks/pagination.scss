@@ -1,0 +1,13 @@
+.pagination__arrow {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .pagination__bullet {
+    display: none;
+  }
+
+  .pagination__arrow {
+    display: block;
+  }
+}

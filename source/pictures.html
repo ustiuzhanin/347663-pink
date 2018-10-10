@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--inner">
 
     <div class="page-header__wrapper">
       <img class="page-header__logo" src="" alt="">
@@ -37,19 +38,20 @@
 
   <section class="pictures">
     <h3 class="pictures__capture">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
-    <ul class="pictures__list comment">
-      <li class="comment__item">
-        <img class="comment__img comment__img--panorama" src="#" alt="">
-        <div class="comment__wrapper">
-          <h4 class="comment__author">Анна</h4>
-          <span class="comment__time">(5 Минут назад)</span>
-          <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-          <div class="comment__likes">
-            <img src="" alt="" class="comment__likes-img">
-            <span class="comment__likes-count">Нравится: 215</span>
-          </div>
+    <div class="comment comment--panorama">
+      <img class="comment__img comment__img--panorama" src="#" alt="">
+      <div class="comment__wrapper">
+        <h4 class="comment__author">Анна</h4>
+        <span class="comment__time">(5 Минут назад)</span>
+        <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+        <div class="comment__likes">
+          <img src="" alt="" class="comment__likes-img">
+          <span class="comment__likes-count">Нравится: 215</span>
         </div>
-      </li>
+      </div>
+    </div>
+    <ul class="pictures__list comment">
+
       <li class="comment__item">
         <img class="comment__img" src="#" alt="">
         <div class="comment__wrapper">

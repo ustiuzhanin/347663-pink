@@ -1,3 +1,14 @@
-// .page-footer {
-//
-// }
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer--index {
+    display: flex;
+  }
+}

@@ -1,17 +1,39 @@
-form__label--check<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="page-header">
+  <header class="page-header page-header--inner">
 
     <div class="page-header__wrapper">
-      <img class="page-header__logo" src="" alt="">
-      <button class="page-header__btn" type="button"><p class="visually-hidden">Меню</p></button>
+      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+        <g>
+          <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+          <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+          <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+          <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+        </g>
+      </svg>
+      <button class="page-header__btn" type="button">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="49.945px" height="24.007px" viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+          <g id="miu">
+            <g id="editor_list_view_hambuger_menu_glyph">
+              <g>
+                <path id="path-1" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+              <g>
+                <path id="path-1_1_" fill="#FFFFFF" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"/>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <p class="visually-hidden">Меню</p>
+      </button>
     </div>
 
     <nav class="page-header__nav main-nav">
@@ -59,42 +81,42 @@ form__label--check<!DOCTYPE html>
       <fieldset class="form__fieldset form__fieldset--achievements">
         <legend class="form__title">Ваши безбашенные достижения в путешествии</legend>
         <ul class="form__list">
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="shark-selfie">
               <input class="form__input visually-hidden" id="shark-selfie" type="checkbox" name="shark-selfie">
               <span class="form__indicator--checkbox"></span>
               Сделал селфи с акулой
             </label>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="sunburn">
               <input class="form__input visually-hidden" id="sunburn" type="checkbox" name="sunburn">
               <span class="form__indicator--checkbox"></span>
               Обгорел на пляже
             </label>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="chuck-norris">
               <input class="form__input visually-hidden" id="chuck-norris" type="checkbox" name="chuck-norris">
               <span class="form__indicator--checkbox"></span>
               Видел Чака Норриса
             </label>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="souvenirs">
               <input class="form__input visually-hidden" id="souvenirs" type="checkbox" name="souvenirs">
               <span class="form__indicator--checkbox"></span>
               Накупил сувениров
             </label>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="tower">
               <input class="form__input visually-hidden" id="tower" type="checkbox" name="tower">
               <span class="form__indicator--checkbox"></span>
               Удержал башню
             </label>
           </li>
-          <li class="form__item">
+          <li class="form__item form__item--achievements">
             <label class="form__label--check" for="destroy">
               <input class="form__input visually-hidden" id="destroy" type="checkbox" name="destroy">
               <span class="form__indicator--checkbox"></span>
@@ -103,7 +125,7 @@ form__label--check<!DOCTYPE html>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--personal-data">
+      <fieldset class="form__fieldset form__fieldset--personal-contacts">
         <legend class="form__title visually-hidden">Ваши контакты:</legend>
         <ul class="form__list">
           <li class="form__item">
@@ -142,14 +164,15 @@ form__label--check<!DOCTYPE html>
           </li>
         </ul>
       </fieldset>
-      <fieldset class="form__fieldset form__fieldset--apps">
+      <fieldset class="form__fieldset form__fieldset--review">
         <legend class="form__title">Опишите свои эмоции</legend>
         <textarea class="form__textarea" id="form-text" name="text" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
 
-      <button class="form__btn btn btn--submit-img" type="submit">Отправить форму</button>
-
-      <p class="form__explanation-text"><span class="form__explanation-text--sign">*</span> — Обязательные поля</p>
+      <div class="form__wrapper">
+        <button class="form__btn btn btn--submit-img" type="submit">Отправить форму</button>
+        <p class="form__explanation-text"><span class="form__explanation-text--sign">*</span> — Обязательные поля</p>
+      </div>
 
     </form>
   </section>
