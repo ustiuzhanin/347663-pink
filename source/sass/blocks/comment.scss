@@ -19,3 +19,14 @@
   text-transform: uppercase;
   color: $primary-color;
 }
+
+@media (min-width: $tablet-width) {
+  .comment {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .comment__item {
+    width: 300px;
+  }
+}
