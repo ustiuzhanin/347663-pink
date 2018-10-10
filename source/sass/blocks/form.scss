@@ -4,6 +4,17 @@
   font-weight: normal;
 }
 
+.form__fieldset {
+  margin: 0;
+
+  border: none;
+}
+
+.form__fieldset--achievements,
+.form__fieldset--apps {
+  background-color: #f2f2f2;
+}
+
 .form__list {
   @include list-reset();
 }
@@ -12,6 +23,10 @@
 .form__title {
   color: $primary-color;
   text-transform: uppercase;
+}
+
+.form__label--text {
+  display: block;
 }
 
 .form__label--check {
@@ -35,4 +50,81 @@
 
 .form__explanation-text--sign {
   color: $primary-color;
+}
+
+.form__textarea {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__input {
+    flex-grow: 1;
+  }
+
+  .form__fieldset {
+    width: 100%;
+  }
+
+  .form__fieldset--personal-data {
+    order: 1;
+  }
+
+  .form__fieldset--apps {
+    order: 2;
+  }
+
+  .form__fieldset--personal-contacts {
+    order: 3;
+  }
+
+  .form__fieldset--personal-contacts .form__label--text {
+    width: 100%;
+    order: 1;
+  }
+
+  .form__fieldset--achievements {
+    order: 4;
+  }
+
+  .form__fieldset--review {
+    order: 5;
+  }
+
+  .form__wrapper {
+    display: flex;
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__fieldset--personal-data {
+    width: 50%;
+  }
+
+  .form__fieldset--apps {
+    width: 50%;
+  }
+
+  .form__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__item {
+    width: 50%;
+  }
+
+  .form__item--achievements {
+    width: 33%;
+  }
 }

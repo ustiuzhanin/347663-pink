@@ -58,6 +58,18 @@
   font-weight: lighter;
 }
 
+/* inner */
+
+.page-header--inner {
+  min-height: 237px;
+
+  text-align: center;
+}
+
+.page-header--inner::after {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
@@ -83,6 +95,7 @@
 
     background-image: url("../img/iphone-hand-tablet@1x.png1");
   }
+
 }
 
 @media (min-width: $desktop-width) {
