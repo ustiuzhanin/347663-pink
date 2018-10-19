@@ -1,5 +1,33 @@
+.pagination {
+  text-align: center;
+}
+
 .pagination__arrow {
   display: none;
+}
+
+.pagination__bullet {
+  padding: 0;
+  margin: 0 7px;
+  width: 6px;
+  height: 6px;
+
+  background-color: #bec2c7;
+  border: none;
+  border-radius: 50%;
+
+  box-sizing: content-box;
+}
+
+.pagination__bullet--active {
+  box-shadow: 0 0 0 3px $secondary-color;
+  background-color: $white-color;
+}
+
+@media (min-width: $tablet-width) {
+  .pagination--feedback {
+    margin-top: 14px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -7,7 +35,33 @@
     display: none;
   }
 
+  .pagination {
+    position: relative;
+  }
+
   .pagination__arrow {
+    position: absolute;
+
+    top: -291px;
+
     display: block;
+    width: 22px;
+    height: 41px;
+
+    background-image: url("../img/icon-review-arrow-left.svg");
+    background-color: transparent;
+    border: none;
+
+    opacity: 0.1;
+  }
+
+  .pagination__arrow--left {
+    left: 0;
+  }
+
+  .pagination__arrow--right {
+    transform: rotate(180deg);
+
+    right: 0;
   }
 }

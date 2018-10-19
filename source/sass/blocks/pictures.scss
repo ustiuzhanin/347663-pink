@@ -1,6 +1,42 @@
+.pictures {
+  min-height: 2656px;
+  padding-top: 31px;
+  padding-bottom: 10px;
+}
+
 .pictures__capture {
+  padding: 0 40px;
+  margin-bottom: 49px;
+
   font-size: 14px;
   line-height: 30px;
+  text-align: center;
   font-weight: normal;
   color: $secondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .pictures {
+    min-height: 2507px;
+    padding-top: 74px;
+  }
+
+  .pictures__capture {
+    margin-bottom: 76px;
+    padding: 0 50px;
+
+    font-size: 18px;
+    letter-spacing: 0.4px;
+  }
+
+  .pictures__list {
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pictures__capture {
+    padding: 0 310px;
+    margin-bottom: 88px;
+  }
 }

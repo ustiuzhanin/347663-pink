@@ -29,3 +29,17 @@
   border: none;
   border-radius: 4px;
 }
+
+@media (min-width: $tablet-width) {
+  .btn--download {
+    padding: 16px 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .btn--download {
+    padding: 16px 28px;
+
+    font-size: 21px;
+  }
+}

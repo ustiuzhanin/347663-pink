@@ -1,12 +1,49 @@
+.options-table {
+  margin-bottom: 34px;
+
+  border-spacing: 0;
+}
+
+.options-table tbody {
+  display: flex;
+}
+
+.options-table__row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 277px;
+}
+
+.options-table__row--no-mobile {
+  display: none;
+}
+
 .options-table__header {
+  z-index: 1;
+
+  width: 100%;
+  margin-bottom: 0;
+  margin-right: 2px;
+  padding: 17px 0;
+  padding-bottom: 21px;
+
+  text-align: center;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-transform: uppercase;
   color: $white-color;
+
+  background-color: $secondary-color;
+}
+
+.options-table__title {
+  margin: 0;
 }
 
 .options-table__price {
+  display: block;
+
   font-size: 24px;
   line-height: 30px;
   font-weight: lighter;
@@ -14,9 +51,93 @@
 }
 
 .options-table__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  padding: 10px 20px;
+  width: 100%;
+  min-height: 59px;
+
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   text-transform: uppercase;
   color: $secondary-color;
+
+  background-color: $white-color;
+  box-shadow: 0 0 0 2px #e5e5e5;
+}
+
+@media (min-width: $tablet-width) {
+  .options-table__row {
+    width: 155px;
+  }
+
+  .options-table__row--no-mobile {
+    display: block;
+    margin-top: auto;
+  }
+
+  .options-table__header {
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+
+  .options-table__data {
+    justify-content: center;
+    padding: 7px 15px;
+    min-height: 45px;
+  }
+
+  .options-table__data--no-mobile {
+    justify-content: left;
+
+    text-transform: none;
+  }
+
+  .options-table__text {
+    display: none;
+  }
+
+  .options-table__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .options-table__price {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .options-table__row {
+    width: 236px;
+  }
+
+  .options-table__data {
+    min-height: 59px;
+  }
+
+  .options-table__data--no-mobile {
+    padding-left: 24px;
+
+    font-size: 18px;
+  }
+
+  .options-table__header {
+    padding-top: 19px;
+    padding-bottom: 20px;
+  }
+
+  .options-table__title {
+    margin-bottom: 5px;
+
+    font-size: 18px;
+  }
+
+  .options-table__price {
+    font-size: 24px;
+  }
 }
