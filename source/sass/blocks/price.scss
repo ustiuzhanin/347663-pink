@@ -1,7 +1,37 @@
 .price {
+  padding-bottom: 47px;
+
   background-color: $gray-color;
 }
 
-.price__slider {
-  @include list-reset();
+.price__wrapper {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.price__table {
+  width: 840px;
+  margin-left: calc(-414px + 50vw);
+}
+
+@media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 34px;
+  }
+
+  .price__table {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .price__pagination {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding-bottom: 61px;
+  }
 }

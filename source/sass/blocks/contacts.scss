@@ -1,21 +1,29 @@
 .contacts {
+  padding-top: 22px;
+
   text-align: center;
 }
 
 .contacts__capture {
-  width: 300px;
-  margin: 0 auto;
+  margin-bottom: 36px;
 
   font-size: 24px;
+  line-height: 29px;
+  text-align: center;
   font-weight: lighter;
   color: $secondary-color;
 }
 
 .contacts__list {
   @include list-reset;
+
+  padding: 0 20px;
 }
 
 .contacts__info {
+  margin-bottom: 4px;
+  margin-top: 26px;
+
   font-size: 18px;
   font-weight: bold;
   color: $secondary-color;
@@ -23,6 +31,7 @@
 
 .contacts__link {
   font-size: 24px;
+  line-height: 28px;
   font-weight: lighter;
   color: $primary-color;
   text-decoration: none;

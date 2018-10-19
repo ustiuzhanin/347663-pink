@@ -10,50 +10,68 @@
 
   <header class="page-header page-header--inner">
 
-    <div class="page-header__wrapper">
-      <img class="page-header__logo" src="" alt="">
-      <button class="page-header__btn" type="button"><p class="visually-hidden">Меню</p></button>
-    </div>
-
-    <nav class="page-header__nav main-nav">
+    <nav class="page-header__nav main-nav main-nav--closed">
+      <div class="main-nav__wrapper">
+        <svg class="main-nav__logo" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+          <g>
+            <path fill="#FFFFFF" d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+            <path fill="#FFFFFF" d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+            <path fill="#FFFFFF" d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+            <path fill="#FFFFFF" d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+          </g>
+        </svg>
+        <button class="main-nav__toggle" type="button">
+          <p class="visually-hidden">Меню</p>
+        </button>
+      </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="index.html" class="main-nav__link">Главная</a>
+          <a href="#" class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Фотографии</a>
+          <a href="pictures.html" class="main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html" class="main-nav__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/" class="main-nav__link">Html Academy</a>
+          <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
         </li>
       </ul>
     </nav>
 
-    <h2 class="page-header__capture">Фотографии пользователей</h2>
+    <h2 class="page-header__caption--pictures">Фотографии пользователей</h2>
 
   </header>
 
   <section class="pictures">
     <h3 class="pictures__capture">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
-    <div class="comment comment--panorama">
-      <img class="comment__img comment__img--panorama" src="#" alt="">
-      <div class="comment__wrapper">
-        <h4 class="comment__author">Анна</h4>
-        <span class="comment__time">(5 Минут назад)</span>
-        <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <div class="comment__likes">
-          <img src="" alt="" class="comment__likes-img">
-          <span class="comment__likes-count">Нравится: 215</span>
-        </div>
-      </div>
-    </div>
+
+    <a class="pictures__link" ref="">
+      <img class="comment__img comment__img--panorama" src="https://via.placeholder.com/320x137" alt="" width="320" height="137">
+    </a>
+
     <ul class="pictures__list comment">
 
+      <li class="comment__item comment__item--panorama">
+        <div class="comment__wrapper comment__wrapper--panorama">
+          <div class="comment__wrapper--author">
+            <h4 class="comment__author">Анна</h4>
+            <span class="comment__time">(5 Минут назад)</span>
+          </div>
+          <p class="comment__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="comment__likes">
+            <img src="" alt="" class="comment__likes-img">
+            <span class="comment__likes-count">Нравится: 215</span>
+          </div>
+        </div>
+      </li>
+
       <li class="comment__item">
-        <img class="comment__img" src="#" alt="">
+        <img class="comment__img" src="https://via.placeholder.com/280x180" alt="">
         <div class="comment__wrapper">
           <h4 class="comment__author">Левон</h4>
           <span class="comment__time">(5 Часов назад)</span>
@@ -64,6 +82,7 @@
           </div>
         </div>
       </li>
+
       <li class="comment__item">
         <img class="comment__img" src="#" alt="">
         <div class="comment__wrapper">
@@ -132,7 +151,7 @@
 
   <section class="upload">
     <form class="upload__form image-form">
-      <label for="image-form__label">
+      <label for="upload">
         <img class="image-form__img" src="https://via.placeholder.com/350x150" alt="" class="upload__img">
       </label>
       <input class="visually-hidden" id="upload" type="file" name="myFile">
