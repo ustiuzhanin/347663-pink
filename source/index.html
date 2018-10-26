@@ -26,16 +26,13 @@
       </div>
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a href="#" class="main-nav__link">Главная</a>
+          <a class="main-nav__link">Главная</a>
         </li>
         <li class="main-nav__item">
           <a href="pictures.html" class="main-nav__link">Фотографии</a>
         </li>
         <li class="main-nav__item">
           <a href="form.html" class="main-nav__link">Конкурс</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
         </li>
         <li class="main-nav__item">
           <a href="https://htmlacademy.ru/" class="main-nav__link">HTML Academy</a>
@@ -80,106 +77,110 @@
     </ul>
 
     <div class="advantages__performance">
-      <h3 class="advantages__title--perf">Эффект <br>на 24 часа!</h3>
-      <p class="advantages__text--perf">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-      <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+      <div class="advantages__wrapper">
+        <h3 class="advantages__title--perf">Эффект <br>на 24 часа!</h3>
+        <p class="advantages__text--perf">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+        <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+      </div>
     </div>
 
-    <ul class="advantages__slider feedback">
-      <li class="feedback__slide feedback__slide--active">
-        <h3 class="feedback__author">Николай Петров</h3>
-        <p class="feedback__author-info">25 лет, водитель трамвая</p>
-        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </li>
-      <li class="feedback__slide">
-        <h3 class="feedback__author">Николай Петров</h3>
-        <p class="feedback__author-info">25 лет, водитель трамвая</p>
-        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </li>
-      <li class="feedback__slide">
-        <h3 class="feedback__author">Николай Петров</h3>
-        <p class="feedback__author-info">25 лет, водитель трамвая</p>
-        <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </li>
-      <li class="feedback__pagination pagination pagination--feedback">
-        <button class="pagination__bullet pagination__bullet--active" type="button"></button>
-        <button class="pagination__bullet" type="button"></button>
-        <button class="pagination__bullet" type="button"></button>
-        <button class="pagination__arrow pagination__arrow--left"></button>
-        <button class="pagination__arrow pagination__arrow--right"></button>
-      </li>
-    </ul>
+    <div class="advantages__wrapper--slider">
+      <ul class="advantages__slider feedback">
+        <li class="feedback__slide feedback__slide--active">
+          <h3 class="feedback__author">Николай Петров</h3>
+          <p class="feedback__author-info">25 лет, водитель трамвая</p>
+          <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="feedback__slide">
+          <h3 class="feedback__author">Николай Петров</h3>
+          <p class="feedback__author-info">25 лет, водитель трамвая</p>
+          <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="feedback__slide">
+          <h3 class="feedback__author">Николай Петров</h3>
+          <p class="feedback__author-info">25 лет, водитель трамвая</p>
+          <p class="feedback__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </li>
+        <li class="feedback__pagination pagination pagination--feedback">
+          <button class="pagination__bullet pagination__bullet--active" type="button"></button>
+          <button class="pagination__bullet" type="button"></button>
+          <button class="pagination__bullet" type="button"></button>
+          <button class="pagination__arrow pagination__arrow--left"></button>
+          <button class="pagination__arrow pagination__arrow--right"></button>
+        </li>
+      </ul>
+    </div>
 
   </section>
 
   <section class="price">
     <h2 class="visually-hidden">Наши расценки:</h2>
     <div class="price__wrapper">
-    <table class="price__table options-table">
+      <table class="price__table options-table">
 
-      <tr class="options-table__row options-table__row--no-mobile">
-        <td class="options-table__data options-table__data--no-mobile">Розовый фильтр</td>
-        <td class="options-table__data options-table__data--no-mobile">Смайлики</td>
-        <td class="options-table__data options-table__data--no-mobile">Комментарии</td>
-      </tr>
+        <tr class="options-table__row options-table__row--no-mobile">
+          <td class="options-table__data options-table__data--no-mobile">Розовый фильтр</td>
+          <td class="options-table__data options-table__data--no-mobile">Смайлики</td>
+          <td class="options-table__data options-table__data--no-mobile">Комментарии</td>
+        </tr>
 
-      <tr class="options-table__row">
-        <th class="options-table__header">
-          <p class="options-table__title">База</p>
-          <span class="options-table__price">1,99 USD</span>
-        </th>
-        <td class="options-table__data">
-          <span class="options-table__text">Розовый фильтр</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Смайлики</span>
-          <img src="img/icon-no.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Комментарии</span>
-          <img src="img/icon-no.svg" alt="">
-        </td>
-      </tr>
+        <tr class="options-table__row">
+          <th class="options-table__header">
+            <p class="options-table__title">База</p>
+            <span class="options-table__price">1,99 USD</span>
+          </th>
+          <td class="options-table__data">
+            <span class="options-table__text">Розовый фильтр</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Смайлики</span>
+            <img src="img/icon-no.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Комментарии</span>
+            <img src="img/icon-no.svg" alt="">
+          </td>
+        </tr>
 
-      <tr class="options-table__row">
-        <th class="options-table__header">
-          <p class="options-table__title">Стандарт</p>
-          <span class="options-table__price">3,99 USD</span>
-        </th>
-        <td class="options-table__data">
-          <span class="options-table__text">Розовый фильтр</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Смайлики</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Комментарии</span>
-          <img src="img/icon-no.svg" alt="">
-        </td>
-      </tr>
+        <tr class="options-table__row">
+          <th class="options-table__header">
+            <p class="options-table__title">Стандарт</p>
+            <span class="options-table__price">3,99 USD</span>
+          </th>
+          <td class="options-table__data">
+            <span class="options-table__text">Розовый фильтр</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Смайлики</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Комментарии</span>
+            <img src="img/icon-no.svg" alt="">
+          </td>
+        </tr>
 
-      <tr class="options-table__row">
-        <th class="options-table__header">
-          <p class="options-table__title">Анлим</p>
-          <span class="options-table__price">9,99 USD</span>
-        </th>
-        <td class="options-table__data">
-          <span class="options-table__text">Розовый фильтр</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Смайлики</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-        <td class="options-table__data">
-          <span class="options-table__text">Комментарии</span>
-          <img src="img/icon-yes.svg" alt="">
-        </td>
-      </tr>
-    </table>
+        <tr class="options-table__row">
+          <th class="options-table__header">
+            <p class="options-table__title">Анлим</p>
+            <span class="options-table__price">9,99 USD</span>
+          </th>
+          <td class="options-table__data">
+            <span class="options-table__text">Розовый фильтр</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Смайлики</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+          <td class="options-table__data">
+            <span class="options-table__text">Комментарии</span>
+            <img src="img/icon-yes.svg" alt="">
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div class="price__pagination pagination">
