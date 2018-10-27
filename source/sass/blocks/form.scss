@@ -52,7 +52,7 @@
 
 .form__input:focus + .form__indicator--checkbox {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  // outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__input:checked + .form__indicator--checkbox {
@@ -98,7 +98,7 @@
 
 .form__input:focus + .form__indicator--radio {
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  // outline: 5px auto -webkit-focus-ring-color;
 }
 
 .form__input:checked + .form__indicator--radio {
@@ -141,6 +141,7 @@
 }
 
 .form__explanation-text {
+  text-align: center;
   color: $secondary-color;
   text-transform: uppercase;
 }
@@ -179,10 +180,6 @@
   margin-bottom: 22px;
 }
 
-.form__explanation-text {
-  text-align: center;
-}
-
 @media (min-width: $tablet-width) {
   .form {
     display: flex;
@@ -193,9 +190,11 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 51px;
   }
 
   .form__input {
+    margin: 0;
     width: auto;
     flex-grow: 1;
   }
@@ -219,18 +218,10 @@
     border: none;
   }
 
-  .form__item {
-    margin-bottom: 51px;
-  }
-
   .form__label--text-info {
     margin: 0;
     margin-right: 21px;
     padding: 0;
-  }
-
-  .form__input {
-    margin: 0;
   }
 
   .form__fieldset--apps {
