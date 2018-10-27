@@ -10,6 +10,15 @@
   border: none;
 }
 
+.form__title--contacts {
+  display: none;
+}
+
+.form__fieldset--personal-data {
+  padding: 20px;
+  padding-bottom: 25px;
+}
+
 .form__fieldset--achievements,
 .form__fieldset--apps {
   background-color: #f2f2f2;
@@ -27,9 +36,97 @@
 
 .form__label--text {
   display: block;
+  padding-left: 22px;
+  margin-bottom: 5px;
+}
+
+.form__input {
+  width: 100%;
+  padding: 15px;
+  padding-left: 21px;
+  margin-bottom: 16px;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.form__input:focus + .form__indicator--checkbox {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form__input:checked + .form__indicator--checkbox {
+  background-image: url("../img/icon-yes-form.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form__indicator--checkbox {
+  width: 39px;
+  height: 39px;
+  margin-right: 30px;
+
+  border: 2px solid #e5e5e5;
+  background-color: $white-color;
+}
+
+.form__fieldset--achievements {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.form__fieldset--personal-contacts {
+  padding: 20px;
+  padding-top: 32px;
+  padding-bottom: 24px;
+}
+
+.form__fieldset--apps {
+  padding: 20px;
+  padding-bottom: 6px;
+}
+
+.form__indicator--radio {
+  width: 39px;
+  height: 39px;
+  margin-right: 30px;
+
+  background-color: $white-color;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.form__input:focus + .form__indicator--radio {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form__input:checked + .form__indicator--radio {
+  background: radial-gradient(ellipse at center, $primary-color 29%, $white-color 32%);
+}
+
+.form__title {
+  padding: 0 20px;
+  margin-top: 17px;
+  margin-bottom: 38px;
+
+  text-align: center;
+  line-height: 19px;
+}
+
+.form__title--apps {
+  margin-bottom: 34px;
+}
+
+.form__fieldset--apps .form__label--check {
+  margin-bottom: 36px;
 }
 
 .form__label--check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 43px;
+
   font-size: 18px;
   color: $secondary-color;
 }
@@ -52,8 +149,38 @@
   color: $primary-color;
 }
 
-.form__textarea {
+.form__explanation-text-add {
   display: none;
+}
+
+.form__fieldset--review {
+  padding: 20px;
+}
+
+.form__fieldset--review .form__title {
+  margin-bottom: 16px;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 201px;
+  padding: 14px 18px;
+  resize: none;
+
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.form__wrapper {
+  padding: 18px 20px;
+}
+
+.form__btn {
+  margin-bottom: 22px;
+}
+
+.form__explanation-text {
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -65,66 +192,263 @@
   .form__item {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
   }
 
   .form__input {
+    width: auto;
     flex-grow: 1;
   }
 
   .form__fieldset {
+    position: relative;
+    z-index: 1;
+
     width: 100%;
+
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: $white-color;
   }
 
   .form__fieldset--personal-data {
+    padding: 53px 0;
+    padding-bottom: 13px;
     order: 1;
+
+    border: none;
+  }
+
+  .form__item {
+    margin-bottom: 51px;
+  }
+
+  .form__label--text-info {
+    margin: 0;
+    margin-right: 21px;
+    padding: 0;
+  }
+
+  .form__input {
+    margin: 0;
   }
 
   .form__fieldset--apps {
+    position: relative;
     order: 2;
+
+    padding-top: 53px;
+    padding-left: 58px;
+    padding-bottom: 18px;
+    margin-bottom: 56px;
+  }
+
+  .form__title--apps {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    max-width: 380px;
+    margin: 0 auto;
+
+    background-color: $white-color;
+  }
+
+  .form__fieldset--apps .form__label--check {
+    margin-bottom: 0;
+  }
+
+  .form__fieldset--apps .form__item {
+    margin-bottom: 36px;
+  }
+
+  .form__indicator--radio {
+    margin-right: 20px;
   }
 
   .form__fieldset--personal-contacts {
     order: 3;
+    padding: 37px 58px;
+    padding-bottom: 0;
+    margin-bottom: 64px;
   }
 
-  .form__fieldset--personal-contacts .form__label--text {
+  .form__fieldset--personal-contacts .form__item {
+    margin-bottom: 23px;
+  }
+
+  .form__label--text-contact {
     width: 100%;
     order: 1;
+    margin-left: 19px;
+    margin-top: 9px;
+    padding: 0;
+  }
+
+  .form__title--contacts {
+    display: inline;
+    padding: 0 36px;
+    margin: 0;
   }
 
   .form__fieldset--achievements {
     order: 4;
+    padding: 52px 58px;
+    padding-bottom: 5px;
+    margin-bottom: 65px;
+  }
+
+  .form__title--achievements {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+
+    width: 437px;
+    margin: 0 auto;
+    background: $white-color;
+  }
+
+  .form__indicator--checkbox {
+    margin-right: 20px;
+  }
+
+  .form__item--achievements {
+    margin-bottom: 0;
   }
 
   .form__fieldset--review {
     order: 5;
+    padding: 45px 58px;
+    padding-bottom: 41px;
+  }
+
+  .form__title--review {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+    max-width: 260px;
+    margin: 0 auto;
+
+    background-color: $white-color;
+  }
+
+  .form__textarea {
+    min-height: 193px;
   }
 
   .form__wrapper {
     display: flex;
     order: 6;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 68px;
+    padding: 0;
+  }
+
+  .form__btn {
+    width: 300px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .form {
+    justify-content: space-between;
+  }
+
   .form__fieldset--personal-data {
-    width: 50%;
+    width: 480px;
+    padding: 0 10px;
+    padding-right: 35px;
   }
 
   .form__fieldset--apps {
-    width: 50%;
+    width: 435px;
+    margin-right: 10px;
+    padding: 48px 75px;
+    padding-bottom: 10px;
+  }
+
+  .form__fieldset--personal-contacts {
+    width: 940px;
+    padding-top: 28px;
+    padding-bottom: 2px;
+    margin: 0 auto;
+    margin-bottom: 65px;
+  }
+
+  .form__fieldset--personal-contacts .form__item {
+    width: 375px;
+    margin: 0;
   }
 
   .form__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 6px 0;
+  }
+
+  .form__fieldset--achievements {
+    width: 940px;
+    margin: 0 auto;
+    padding: 46px 58px;
+    padding-bottom: 5px;
+    margin-bottom: 65px;
+  }
+
+  .form__fieldset--achievements .form__list {
+    height: 175px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .form__label--check {
+    margin-bottom: 0;
   }
 
   .form__item {
-    width: 50%;
+    width: 100%;
   }
 
   .form__item--achievements {
-    width: 33%;
+    width: 250px;
+    margin-bottom: 41px;
+
+    &:first-child {
+      margin-right: 63px;
+    }
+
+    &:nth-child(3) {
+      margin-right: 47px;
+    }
+  }
+
+  .form__fieldset--review {
+    width: 940px;
+    margin: 0 auto;
+    padding: 42px 58px;
+    padding-bottom: 33px;
+  }
+
+  .form__textarea {
+    min-height: 128px;
+  }
+
+  .form__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    margin-top: 65px;
+  }
+
+  .form__explanation-text-add {
+    display: inline;
+    margin-top: 18px;
   }
 }

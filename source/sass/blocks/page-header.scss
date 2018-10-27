@@ -68,7 +68,7 @@
   display: none;
 }
 
-.page-header__caption--pictures {
+.page-header__caption--inner {
   margin-top: 30px;
   padding: 0 20px;
 
@@ -76,6 +76,12 @@
   text-align: center;
   color: $white-color;
   font-weight: lighter;
+}
+
+/* form */
+
+.page-header--form {
+  padding-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -126,9 +132,10 @@
 
   .page-header--inner {
     min-height: 440px;
+    padding-bottom: 1px;
   }
 
-  .page-header__caption--pictures {
+  .page-header__caption--inner {
     margin-top: 70px;
 
     font-size: 50px;
@@ -183,9 +190,13 @@
     height: auto;
   }
 
-  .page-header__caption--pictures {
+  .page-header__caption--inner {
     width: 400px;
     margin: 65px auto;
     margin-bottom: 30px;
+  }
+
+  .page-header__caption--inner-form {
+    width: 800px;
   }
 }
