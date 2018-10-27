@@ -1,11 +1,9 @@
 .pictures {
-  min-height: 2656px;
   padding-top: 31px;
-  padding-bottom: 10px;
 }
 
 .pictures__capture {
-  padding: 0 40px;
+  padding: 0 20px;
   margin-bottom: 49px;
 
   font-size: 14px;
@@ -15,10 +13,14 @@
   color: $secondary-color;
 }
 
+.pictures__capture--bottom {
+  margin-bottom: 42px;
+}
+
 @media (min-width: $tablet-width) {
   .pictures {
-    min-height: 2507px;
     padding-top: 74px;
+    padding-bottom: 10px;
   }
 
   .pictures__capture {
@@ -27,6 +29,10 @@
 
     font-size: 18px;
     letter-spacing: 0.4px;
+  }
+
+  .pictures__capture--bottom {
+    margin-bottom: 59px;
   }
 
   .pictures__list {
@@ -38,5 +44,10 @@
   .pictures__capture {
     padding: 0 310px;
     margin-bottom: 88px;
+  }
+
+  .pictures__capture--bottom {
+    margin-top: 5px;
+    margin-bottom: 56px;
   }
 }

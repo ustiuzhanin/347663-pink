@@ -1,7 +1,49 @@
+.form-page {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 11px;
+}
+
 .form-page__capture {
+  padding: 0 20px;
+
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
   color: $secondary-color;
   text-align: center;
+}
+
+.form-page__text {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-page {
+    width: 620px;
+    padding-top: 74px;
+  }
+
+  .form-page__capture {
+    padding: 0 50px;
+
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.4px;
+  }
+
+  .form-page__text {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-page {
+    width: 960px;
+  }
+
+  .form-page__capture {
+    padding: 0 90px;
+    margin-bottom: 78px;
+  }
 }

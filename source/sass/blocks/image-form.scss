@@ -1,0 +1,197 @@
+.image-form__upload {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 42px;
+}
+
+.image-form__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-form__label {
+  margin: 0 17px;
+  width: 50px;
+}
+
+.image-form__label svg {
+  opacity: 0.3;
+}
+
+.image-form__label:hover svg {
+  opacity: 0.5;
+}
+
+.image-form__label:active svg {
+  fill: $primary-color;
+  opacity: 1;
+}
+
+.image-form__scale {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+
+  display: none;
+  width: 267px;
+  height: 10px;
+  padding: 10px;
+}
+
+.image-form__scale-line {
+  position: relative;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: $black-color;
+}
+
+.image-form__scale-bullet {
+  position: absolute;
+  left: 50%;
+  top: -5.5px;
+
+  width: 14px;
+  height: 14px;
+
+  background-color: $white-color;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $primary-color;
+  }
+}
+
+.image-form__input:focus + svg,
+.image-form__input:checked + svg {
+  fill: $primary-color;
+  opacity: 1;
+}
+
+.image-form__input:focus + svg {
+  outline: thin dotted;
+  // outline: 5px auto -webkit-focus-ring-color;
+}
+
+.image-form__input:focus ~ .image-form__scale,
+.image-form__input:checked ~ .image-form__scale {
+  display: block;
+}
+
+.image-form__wrapper--btn {
+  width: 320px;
+  padding: 20px;
+  padding-top: 35px;
+  padding-bottom: 29px;
+  margin: 0 auto;
+
+  border-top: 1px solid #dddfe0;
+}
+
+.image-form__btn {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (min-width: $tablet-width) {
+  .image-form__upload {
+    width: 300px;
+    margin: 0;
+    margin-top: 14px;
+  }
+
+  .image-form__wrapper--content {
+    margin-left: auto;
+  }
+
+  .image-form__wrapper {
+    width: 275px;
+    flex-wrap: wrap;
+    padding-bottom: 14px;
+  }
+
+  .image-form__label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 71px;
+    margin: 0;
+    padding-right: 8px;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .image-form__label svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .image-form__scale {
+    position: relative;
+    bottom: 0;
+
+    display: block;
+    width: 222px;
+  }
+
+  .image-form__wrapper--btn {
+    width: 275px;
+    padding-right: 10px;
+    padding-left: 0;
+
+    border: none;
+  }
+
+  .image-form__btn {
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .image-form__wrapper {
+    width: 410px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  .image-form__label {
+    padding-right: 20px;
+  }
+
+  .image-form__label svg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .image-form__scale {
+    width: 308px;
+  }
+
+  .image-form__wrapper--btn {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    padding: 0;
+    margin-top: auto;
+  }
+
+  .image-form__btn {
+    width: 180px;
+    margin-bottom: 3px;
+  }
+}
