@@ -51,8 +51,13 @@
 }
 
 .form__input:focus + .form__indicator--checkbox {
-  outline: thin dotted;
+  // outline: thin dotted;
   // outline: 5px auto -webkit-focus-ring-color;
+  // outline: 2px solid lightblue;
+  outline-color: rgb(59, 153, 252);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
 }
 
 .form__input:checked + .form__indicator--checkbox {
