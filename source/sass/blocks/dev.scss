@@ -1,6 +1,35 @@
+.dev__link {
+  display: flex;
+
+  text-decoration: none;
+
+  &:hover path,
+  &:focus path, {
+    fill: $secondary-color;
+  }
+
+  &:active svg {
+    opacity: 0.3;
+  }
+}
+
 .dev__text {
+  margin: 0;
+
   font-size: 14px;
   line-height: 28px;
   font-weight: normal;
   color: $secondary-color;
+}
+
+.dev svg {
+  margin-left: 17px;
+
+  fill: $primary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .dev__text {
+    font-size: 19px;
+  }
 }

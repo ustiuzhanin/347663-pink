@@ -31,7 +31,7 @@
 
   position: absolute;
   bottom: 271px;
-  left: 0;
+  left: calc(50% - 129px);
 
   width: 258px;
   height: 286px;
@@ -94,7 +94,32 @@
     }
   }
 
+  .page-header::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 330px);
+    z-index: 1;
+
+    display: block;
+    width: 660px;
+    height: 549px;
+
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 660px;
+    }
+  }
+
   .page-header__wrapper {
+    position: relative;
+    z-index: 5;
+
     flex-direction: column;
     height: 730px;
     padding-right: 330px;
@@ -120,19 +145,15 @@
     margin-bottom: auto;
   }
 
-  .page-header::after {
-    content: none;
-    width: 700px;
-    height: 545px;
-
-    background-image: url("../img/iphone-hand-tablet@1x.png1");
-  }
-
   /* inner */
 
   .page-header--inner {
     min-height: 440px;
     padding-bottom: 1px;
+  }
+
+  .page-header--inner::after {
+    display: none;
   }
 
   .page-header__caption--inner {
@@ -158,6 +179,22 @@
     }
   }
 
+  .page-header::after {
+    left: calc(50% - 525px);
+
+    width: 1050px;
+    height: 645px;
+
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: cover;
+    }
+  }
+
   .page-header__wrapper {
     width: 940px;
     height: auto;
@@ -179,15 +216,15 @@
     display: none;
   }
 
-  .page-header::after {
-    background-image: url("../img/iphone-hand-desktop@1x.png");
-  }
-
   /* inner */
 
   .page-header--inner {
     min-height: 394px;
     height: auto;
+  }
+
+  .page-header--inner::after {
+    display: none;
   }
 
   .page-header__caption--inner {

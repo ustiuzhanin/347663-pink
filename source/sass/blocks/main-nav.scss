@@ -12,7 +12,17 @@
 
   display: flex;
   justify-content: space-between;
-  padding: 21px;
+  padding: 10px 20px;
+  padding-bottom: 5px;
+}
+
+.main-nav__logo--tablet,
+.main-nav__logo--desktop {
+  display: none;
+}
+
+.main-nav__logo {
+  margin-top: 11px;
 }
 
 .main-nav__toggle {
@@ -111,8 +121,31 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__wrapper {
-    padding: 44px 21px;
-    padding-bottom: 41px;
+    padding: 27px 20px;
+  }
+
+  .main-nav__logo--mobile,
+  .main-nav__logo--desktop {
+    display: none;
+  }
+
+  .main-nav__logo--tablet {
+    display: block;
+    margin-top: 0;
+  }
+
+
+  .main-nav__logo-link:focus .main-nav__logo--tablet,
+  .main-nav__logo-link:hover .main-nav__logo--tablet {
+    fill: $primary-color;
+  }
+
+  .main-nav__logo {
+    margin-top: 0;
+  }
+
+  .main-nav__toggle {
+    margin-top: 17px;
   }
 }
 
@@ -125,6 +158,22 @@
   .main-nav__wrapper {
     width: 200px;
     padding: 0;
+    padding-top: 27px;
+  }
+
+  .main-nav__logo--mobile,
+  .main-nav__logo--tablet {
+    display: none;
+  }
+
+  .main-nav__logo--desktop {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .main-nav__logo-link:focus .main-nav__logo--desktop-hover path,
+  .main-nav__logo-link:hover .main-nav__logo--desktop-hover path {
+    fill: $primary-color;
   }
 
   .main-nav__toggle {

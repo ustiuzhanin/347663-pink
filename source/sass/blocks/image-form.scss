@@ -81,8 +81,8 @@
 }
 
 .image-form__input:focus + svg {
-  outline: thin dotted;
-  // outline: 5px auto -webkit-focus-ring-color;
+  // outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .image-form__input:focus ~ .image-form__scale,
