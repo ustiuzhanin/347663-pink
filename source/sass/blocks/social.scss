@@ -1,0 +1,25 @@
+.social {
+  @include list-reset;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.social__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-size: 100% 100%;
+}
+
+.social__link--twitter {
+  background-image: url('../../img/icon-twitter.svg');
+}
+
+.social__link--facebook {
+  background-image: url('../../img/icon-facebook.svg');
+}
+
+.social__link--youtube {
+  background-image: url('../../img/icon-youtube.svg');
+}

@@ -1,4 +1,10 @@
+.dev {
+  display: flex;
+  align-items: center;
+}
+
 .dev__text {
+  margin-right: 5px;
   font-size: 14px;
   line-height: 28px;
   font-weight: normal;
