@@ -1,6 +1,7 @@
 .page-footer {
   display: flex;
   justify-content: space-between;
+  min-height: 110px;
 }
 
 .page-footer--index {
@@ -10,5 +11,9 @@
 @media (min-width: $tablet-width) {
   .page-footer--index {
     display: flex;
+    justify-content: space-around;
+  }
+  .page-footer__item {
+    width: 150px;
   }
 }
